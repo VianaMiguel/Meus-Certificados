@@ -9,12 +9,15 @@ Este espaço foi criado com o objetivo de **centralizar, organizar e apresentar 
 ## 👤 Sobre mim
 
 **Nome:** Miguel Gonçalves Viana  
+📍**Localização:** Rio de Janeiro – RJ, Brasil
 **Certificação profissional:** CPA-20 – ANBIMA (Ativa)  
 **Áreas de atuação:** Contábil, Dados, Comercial, Atendimento ao Cliente, Gestão, Processos e Tecnologia
 
 Sou **profissional certificado CPA-20**, com experiência nas áreas **Contábil, Comercial, Atendimento e Relacionamento com Clientes**, além de **Supervisão de Equipe, Processos de Caixa e Solução de Problemas**.
 
 Possuo perfil analítico, organizado e orientado a resultados, unindo **conhecimento técnico, visão de negócios e foco em melhoria contínua de processos**.
+
+💼 Disponibilidade: Remoto | Híbrido | Presencial
 
 ---
 
