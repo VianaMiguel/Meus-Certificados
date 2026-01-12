@@ -1,0 +1,75 @@
+#Parte como lussandro imaginava
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Dashboard | VentureGotchi{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/dashboard.css' %}"> 
+{% endblock %}
+
+{% block content %}
+<div class="dashboard-card">
+
+  <h1>Dashboard do Aluno</h1>
+
+  <p>
+    <strong>Aventureiro Gotchi:</strong>
+    @{{ request.user.username }}
+  </p>
+
+  <p class="info"><strong>Nível atual:</strong> {{ nivel }}</p>
+  <p class="info"><strong>XP atual:</strong> {{ xp }}</p>
+
+    <div class="avatar-header">
+      <div class="avatar-image">
+        <span class="avatar-placeholder">🤖</span>
+      </div>
+
+      <div class="avatar-info">
+        <h2>Seu Gotchi</h2>
+        <p class="level">
+          Nível: <strong>{{ nivel }}</strong>
+        </p>
+      </div>
+    </div>
+
+    <ul class="stats">
+      <li>💻 Técnica <span>12</span></li>
+      <li>🎨 Criatividade <span>8</span></li>
+      <li>📈 Disciplina <span>10</span></li>
+      <li>🤝 Liderança <span>6</span></li>
+    </ul>
+
+        <h2>Missões do Dia</h2>
+
+    <ul class="mission-list">
+      <li class="mission completed">
+        <span class="mission-title">📘 Estudar Django Templates</span>
+        <span class="mission-xp">+20 XP</span>
+      </li>
+
+      <li class="mission">
+        <span class="mission-title">🧪 Criar layout do dashboard</span>
+        <span class="mission-xp">+30 XP</span>
+      </li>
+
+      <li class="mission">
+        <span class="mission-title">🎨 Ajustar identidade visual</span>
+        <span class="mission-xp">+10 XP</span>
+      </li>
+    </ul>
+
+  <p class="info"> 🎉 Parabéns por chegar até aqui. Você está evoluindo! Continue realizando atividades para subir de nível. </p>
+  <p class="info">Evolução:</p> 
+  
+  <div class="barra"> 
+    <div class="barra-progresso"style="width: {{ porcentagem }}%;">
+    {{ porcentagem }}%
+  </div>
+</div>
+
+  <p class="info"><strong>Próximo nível:</strong> {{ proximo }}</p> 
+
+  <a href="{% url 'progresso' %}" class="btn">Ir para Progresso</a>
+ </div> 
+ {% endblock %}
