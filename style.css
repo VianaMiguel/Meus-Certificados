@@ -1,0 +1,141 @@
+<<<<<<< feature/frontend-ui
+/*
+Arquivo legado.
+
+Este arquivo NÃO deve conter estilos globais.
+Estilos ativos devem ser definidos em:
+- reset.css
+- variables.css
+- base.css
+- components.css
+- dashboard.css
+
+Mantido apenas por compatibilidade e histórico do projeto.
+*/
+
+
+
+
+/* static/css/style.css */ 
+/*
+body { 
+    /*
+    font-family: Arial, sans-serif; 
+    background-color: #f0f0f0; 
+    color: #333; 
+    line-height: 1.6;
+    */ 
+    /*font-family: Arial, Helvetica, sans-serif;
+    background-color: #3A7DFF;
+    color: #6C3BFF;
+    counter-increment: #2ECC71;
+    line-height: 1.6;
+    
+} 
+
+h1 { 
+    /*
+    color: #005a9c; /* Um azul Django 
+    */ 
+   /* color:#1E1E1E;
+} 
+ul { 
+    /*
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    padding: 15px; }
+    */ 
+    /*background-color: #F4F4F4;
+    border: 1px solid #1E1E1E;
+    padding: 15px;
+=======
+/* static/css/style.css */
+/* Layout principal */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 24px;
+} /* Card principal da Home */
+.home-card {
+   background: #f4f4f4;
+   padding: 30px; 
+   border-radius: 15px; 
+   max-width: 600px; 
+   width: 100%; 
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+   animation: fadeIn 1s ease; 
+} /* Títulos */
+.home-card h1 {
+  text-align: center;
+  color: #6c3bff; /* mesmo roxo do dashboard */
+  margin-bottom: 20px;
+} /* Texto informativo */
+.info {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #1e1e1e;
+} /* Lista de desafios */
+.lista-desafios {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+>>>>>>> main
+}
+.lista-desafios li {
+  list-style-type: square;
+  margin-left: 20px;
+  font-weight: bold;
+} /* Botão */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #3a7dff;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background: #2a5ed1;
+} /* Animação */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+<<<<<<< feature/frontend-ui
+*/
+/* static/css/style.css */ 
+
+/*
+body {
+     font-family: Arial, sans-serif; 
+     background-color: #3A7DFF; 
+     color: #6C3BFF; 
+     line-height: 1.6;
+} 
+h1 {
+     color: #2ecc71; /* Um azul Django */ 
+/*
+} 
+ul { 
+    background-color: #fffb01; 
+    border: 1px solid #6C3BFF; 
+    padding: 15px; 
+} 
+li {
+    list-style-type: square; 
+}
+=======
+>>>>>>> main
