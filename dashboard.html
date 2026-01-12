@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+<<<<<<< feature/frontend-ui
+
+{% block title %}Dashboard | VentureGotchi{% endblock %}
+=======
+{% load static %}
+{% block title %}Dashboard - VentureGotchi{% endblock %}
+>>>>>>> main
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/dashboard.css' %}"> 
+{% endblock %}
+
+{% block content %}
+<<<<<<< feature/frontend-ui
+<main class="dashboard">
+
+  <section class="card avatar-card">
+    <div class="avatar-header">
+      <div class="avatar-image">
+        <span class="avatar-placeholder">🤖</span>
+      </div>
+
+      <div class="avatar-info">
+        <h2>Seu Gotchi</h2>
+        <p class="level">
+          Nível: <strong>{{ nivel }}</strong>
+        </p>
+      </div>
+    </div>
+
+    <ul class="stats">
+      <li>💻 Técnica <span>12</span></li>
+      <li>🎨 Criatividade <span>8</span></li>
+      <li>📈 Disciplina <span>10</span></li>
+      <li>🤝 Liderança <span>6</span></li>
+    </ul>
+  </section>
+
+
+  <section class="card">
+    <h1>Dashboard do Aluno</h1>
+
+    <p>
+      <strong>Aventureiro Gotchi:</strong>
+      <span class="badge badge-level">
+        @{{ request.user.username }}
+      </span>
+    </p>
+
+    <p><strong>Nível atual:</strong> {{ nivel }}</p>
+    <p><strong>XP atual:</strong> {{ xp }}</p>
+
+    <p>
+      🎉 Parabéns por chegar até aqui.
+      Continue realizando atividades para subir de nível.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Evolução</h2>
+
+    <a href="{% url 'progresso' %}" class="btn">
+      Ver detalhes do progresso
+    </a>
+
+
+    <div class="xp-bar">
+      <div class="xp-progress animate" style="width: {{ porcentagem|default:0 }}%;">
+      </div>
+    </div>
+
+    <p>
+      <strong>Próximo nível:</strong> {{ proximo }}
+    </p>
+  </section>
+
+  <section class="card missions">
+    <h2>Missões do Dia</h2>
+
+    <ul class="mission-list">
+      <li class="mission completed">
+        <span class="mission-title">📘 Estudar Django Templates</span>
+        <span class="mission-xp">+20 XP</span>
+      </li>
+
+      <li class="mission">
+        <span class="mission-title">🧪 Criar layout do dashboard</span>
+        <span class="mission-xp">+30 XP</span>
+      </li>
+
+      <li class="mission">
+        <span class="mission-title">🎨 Ajustar identidade visual</span>
+        <span class="mission-xp">+10 XP</span>
+      </li>
+    </ul>
+  </section>
+
+
+</main>
+{% endblock %}
+=======
+<div class="dashboard-card">
+
+  <h1>Dashboard do Aluno</h1>
+
+  <p>
+    <strong>Aventureiro Gotchi:</strong>
+    @{{ request.user.username }}
+  </p>
+
+  <p class="info"><strong>Nível atual:</strong> {{ nivel }}</p>
+  <p class="info"><strong>XP atual:</strong> {{ xp }}</p>
+  <p class="info"> 🎉 Parabéns por chegar até aqui. Você está evoluindo! Continue realizando atividades para subir de nível. </p>
+  <p class="info">Evolução:</p> 
+  
+  <div class="barra"> 
+    <div class="barra-progresso"style="width: {{ porcentagem }}%;">
+    {{ porcentagem }}%
+  </div>
+</div>
+
+  <p class="info"><strong>Próximo nível:</strong> {{ proximo }}</p> 
+
+  <a href="{% url 'progresso' %}" class="btn">Ir para Progresso</a>
+ </div> 
+ {% endblock %}
+>>>>>>> main
